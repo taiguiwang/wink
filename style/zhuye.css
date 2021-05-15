@@ -1,0 +1,174 @@
+/*******************************顶部导航栏***********************************/
+
+a:hover {
+    /*鼠标进入a标签光标变成手型*/
+    cursor: pointer;
+}
+
+/*导航栏字体、位置*/
+
+.daoHangLan {
+    display: flex;
+    justify-content: space-around;
+    /*导航栏周围留空*/
+    /* background-color: rgb(214, 214, 214); */
+    margin: 10px 20px 0 20px;
+    border-radius: 15px;
+    /*导航栏圆角*/
+    font-family: Georgia;
+    /*字体*/
+    font-style: oblique;
+    /* position: sticky; */
+    top: 10px;
+    opacity: 0.6;
+}
+
+body {
+    /* height: 510px; */
+    /* background-image: url("/img/tu4.jpg"); */
+    background-color: rgb(252, 199, 247);
+    background-size: cover;
+    background-position: 0% 52%;
+}
+
+.DHL-text {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    /*删除链接下划线*/
+    opacity: 0.7;
+}
+
+@media only screen and (max-width:800px) {
+    body {
+        background-position: 50% 30%;
+    }
+}
+
+/*导航栏上的时间*/
+
+#time {
+    color: #ff1c42;
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*字体*/
+    padding-top: 6px;
+}
+
+.daoHangLan>#time {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*导航栏的旋转效果*/
+
+.daoHangLan>a {
+    transition: width 1.5s, height 1.5s;
+    -moz-transition: width 1.5s, height 1.5s, -moz-transform 1.5s;
+    /*  */
+    -webkit-transition: width 1.5s, height 1.5s, -webkit-transform 1.5s;
+    /*  */
+    -o-transition: width 1.5s, height 1.5s, -o-transform 1.5s;
+}
+
+.daoHangLan>a:hover {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    /*  */
+    -webkit-transform: rotate(360deg);
+    /*  */
+    -o-transform: rotate(360deg);
+}
+
+/***************************尾部导航栏*******************************************/
+
+.bottom a {
+    color: #bebdbdf5;
+    font-size: 13px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 10px;
+    left: 115px;
+}
+
+.bj {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 1536px;
+    height: 35px;
+    opacity: 0.5;
+}
+
+/**********************************主页********************************************/
+
+@media only screen and (max-width:800px) {}
+
+/* ******************简历样式设置 ***********************************/
+
+/* 题标 */
+
+#jianLi {
+    width: 800px;
+    height: 1200px;
+    background-color: rosybrown;
+    margin: 50px 0 0 305px;
+}
+
+#BT {
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    font-size: 36px;
+    background-color: #ccc;
+}
+
+/* 左边简历介绍*/
+
+#jieShao {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 右边简历介绍 */
+
+/* 证件照 */
+
+.img img {
+    width: 160px;
+    height: 200px;
+    margin: 20px 0 0 0;
+}
+
+/* 个人介绍 */
+
+#geRen {
+    margin-left: 39px;
+    margin-right: 39px;
+}
+
+#gr_tb {
+    line-height: 35px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #ccc;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.a1 {
+    margin-bottom: 20px;
+}
+
+#beiJing {
+    margin-left: 39px;
+    margin-right: 39px;
+}
+
+#SHOOL {
+    display: flex;
+    justify-content: space-between;
+}
